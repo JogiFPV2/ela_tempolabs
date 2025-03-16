@@ -1,4 +1,12 @@
+// ...Other imports
+import { useRoutes } from "react-router-dom";
+import routes from "tempo-routes";
+
+    // Tempo routes
+    {import.meta.env.VITE_TEMPO && useRoutes(routes)}
+    <Routes>
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+    </Routes>
 import { useEffect } from "react";
 import Login from "./components/Login";
 import SuperAdminPanel from "./components/SuperAdminPanel";
@@ -75,6 +83,7 @@ function App() {
       </AuthProvider>
     </ThemeProvider>
   );
-}
+} 
+
 
 export default App;
